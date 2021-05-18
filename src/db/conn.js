@@ -1,6 +1,6 @@
 const mongoose = require ("mongoose");
 
-mongoose.connect("mongodb://localhost:27017/myrecords" , {
+mongoose.connect("mongodb+srv://aritro:aritro@cluster0.7l5by.mongodb.net/myrecords" , {
     useNewUrlParser:true,
     useUnifiedTopology:true,                           
     useCreateIndex:true
