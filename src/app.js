@@ -3,6 +3,7 @@ const path = require("path");
 const app = express();
 const hbs = require("hbs");
 const {json} = require("hbs");
+const port = process.env.PORT || 3000;
 
 require("./db/conn");
 const Register = require("./models/registers");
@@ -101,6 +102,6 @@ app.post("/music.html", async (req, res) => {
     }
 });
 
-
-
-app.listen(3000)
+app.listen(port, () => {
+    console.log('listening to port no at ${port}');
+  })
